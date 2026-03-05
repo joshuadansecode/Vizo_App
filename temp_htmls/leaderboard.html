@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00C49A",
+                        "background-light": "#f5f8f6",
+                        "background-dark": "#0A1628",
+                        "surface-navy": "#112038",
+                        "muted-sky": "#7FAECA",
+                        "gold-amber": "#FFD166"
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Spline Sans', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display">
+<!-- Header Section -->
+<header class="sticky top-0 z-20 bg-background-dark/80 backdrop-blur-md px-6 pt-12 pb-4">
+<div class="flex items-center justify-between mb-6">
+<button class="text-slate-100">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</button>
+<h1 class="text-xl font-bold text-white uppercase tracking-widest">Top 50</h1>
+<button class="text-slate-100">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+<!-- Tab Selector -->
+<div class="flex p-1 bg-surface-navy rounded-full gap-1">
+<button class="flex-1 py-2 px-4 rounded-full bg-primary text-background-dark font-bold text-sm transition-all">Points</button>
+<button class="flex-1 py-2 px-4 rounded-full text-muted-sky font-medium text-sm hover:text-white transition-all">Parrainages</button>
+<button class="flex-1 py-2 px-4 rounded-full text-muted-sky font-medium text-sm hover:text-white transition-all">Visibilité</button>
+</div>
+</header>
+<!-- Podium Section -->
+<div class="px-6 py-8 flex items-end justify-center gap-2 mb-4">
+<!-- 2nd Place -->
+<div class="flex flex-col items-center">
+<div class="relative mb-2">
+<div class="w-16 h-16 rounded-full border-4 border-slate-400 overflow-hidden bg-surface-navy">
+<img class="w-full h-full object-cover" data-alt="User avatar for second place runner up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnk6sH6OsFCh425HnX3zujRUCnpOk3UJEwAZYSfkMjfCUWXc_fPECri3QjXoXDwRVih5aLZWHUd9-6yLH4wDipu5e2x3Hg8lQxnmvMKZoEdZReVPzH9Bc-PAqFNI9iomg4UpGmUJNj5hgx9Cc4UhV-gcm-DYtGY6_VaRYqERr2H6CXQteBkR15urPLW8jLruBZLVxfTCE2dY49dYOc3Sk2fIFfa6C0q8SCWCk4_TJWR5lAmx738fDU8L5OIUx2_Iq-TXAKRohLxoI"/>
+</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-slate-400 text-background-dark text-[10px] font-bold px-2 py-0.5 rounded-full">2</div>
+</div>
+<p class="text-white font-semibold text-sm">Sarah</p>
+<p class="text-muted-sky text-xs font-medium">1200 pts</p>
+<div class="w-20 h-24 bg-surface-navy/60 rounded-t-xl mt-4 border-t-2 border-slate-400/30"></div>
+</div>
+<!-- 1st Place -->
+<div class="flex flex-col items-center -translate-y-4">
+<span class="material-symbols-outlined text-gold-amber text-3xl mb-1 drop-shadow-[0_0_10px_rgba(255,209,102,0.5)]">workspace_premium</span>
+<div class="relative mb-2">
+<div class="w-24 h-24 rounded-full border-4 border-gold-amber overflow-hidden bg-surface-navy shadow-[0_0_25px_rgba(255,209,102,0.2)]">
+<img class="w-full h-full object-cover" data-alt="User avatar for first place winner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1rErzDAgZWQWI5otuwNi9GN0OQesbDCJNwpla2l7EOp2y0wDe-P1ftllqgVygWfWYXen6EcGYa7ayY6MbHkxO8j8aqgXZbYN-9IqPcTqOGZu62DE2AmNX3lLy3pO1UJaDiEZgQn1_M8C1tvcMg9J73YYVTQCd4vW8hNE2pd_5oduRDlXdSus-wY_uX8SkKV0pWzMw0YPPP6N9F7MbIOpP0vdUFqj6RX3w8Ydzn2yLcL4nUjIL7anK5Lm3R2j42M_e1CEYYYzcsDE"/>
+</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold-amber text-background-dark text-xs font-bold px-3 py-0.5 rounded-full">1</div>
+</div>
+<p class="text-white font-bold text-lg">Amadou</p>
+<p class="text-primary font-bold text-sm">1500 pts</p>
+<div class="w-24 h-32 bg-primary/20 rounded-t-xl mt-4 border-t-2 border-primary/50 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
+</div>
+</div>
+<!-- 3rd Place -->
+<div class="flex flex-col items-center">
+<div class="relative mb-2">
+<div class="w-16 h-16 rounded-full border-4 border-orange-400 overflow-hidden bg-surface-navy">
+<img class="w-full h-full object-cover" data-alt="User avatar for third place runner up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrmLlOR5RztfCOcAEqKna0fCxXH2eoGa_ewuGVJih7ztNTvn4Ix0Hjg5oPGCzFDAN_6Zv4xnqLU5OxW5ieK_EqjCea1t2XVg-QxRz-7HXplDtwNu9pNFdEzNV1N8Xd9uUTIWUFtoWUGfZKMJHSYVm7IqxKZ8Fz-rA-lYfv9r6Nr9RoaTcrw52ElvV3QKwQuAR31A6M3pRy1Emp5ImrNjN35r8lI_AdFPdyomM1rtOkKQuNpbNLNiK88P-Woor4Z6O0Is5P3CV2EJE"/>
+</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-orange-400 text-background-dark text-[10px] font-bold px-2 py-0.5 rounded-full">3</div>
+</div>
+<p class="text-white font-semibold text-sm">Marc</p>
+<p class="text-muted-sky text-xs font-medium">1000 pts</p>
+<div class="w-20 h-20 bg-surface-navy/60 rounded-t-xl mt-4 border-t-2 border-orange-400/30"></div>
+</div>
+</div>
+<!-- Leaderboard List -->
+<main class="flex-1 px-4 pb-32">
+<div class="space-y-3">
+<!-- Rank Row -->
+<div class="flex items-center bg-surface-navy p-4 rounded-xl border border-white/5">
+<span class="w-8 font-bold text-muted-sky text-sm">4</span>
+<div class="flex flex-1 items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Competitor profile picture rank 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKlNqnNvf9Qj0PlgWVmVUPWzbH_CGhqNhCbuI9pGIM3tMVtTyIsvY8U2KyRVCzvERdEZOj1mA47kRcxxIjGnd_CIPt64994Y3kv5usHY7RoFCWNPSYj06J7ltRGeBdsF5BZSLC7yoApcInkiHqEDkOYPMGXZqCZ2tsM_XOWQSuYG_f36svaR8tkuTSmTjqIEzYlUFe2osCpKqn-ELsHXkcvn1tz0UfZQrds2UlDR3s75DQ-b5DHrl8_9W6hKrVAfJPD-Qu2D18UtQ"/>
+</div>
+<p class="text-white font-medium">Elena Petrova</p>
+</div>
+<p class="text-primary font-bold">945 pts</p>
+</div>
+<!-- Rank Row -->
+<div class="flex items-center bg-surface-navy p-4 rounded-xl border border-white/5">
+<span class="w-8 font-bold text-muted-sky text-sm">5</span>
+<div class="flex flex-1 items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Competitor profile picture rank 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDquzh14Tkm2QC8Sc9hBXGhQqZUy3d_tFhCDsFUiquC-VPbxbkf0zEzOnp3NKS4XLJ3XWg7V6SpqY3U2kCOPMzkGgVYVB4ylEoQCTW6gar-HVjvcP_sx5Xbnb4lTY41Anj6PPzkMx5UBMsTFDuxDq9lbb73q8DJTVS2ZQN0ygs7vWKtR8Uqp_Ej5lj-KcbIEmfvycsAoRmovGg7EgJExo9PP1rTnQYYU-M4xvw2f72tzcsgOqEsyXi1PQ3RejhwQx77Ju1joTLO_yQ"/>
+</div>
+<p class="text-white font-medium">Jean Dupont</p>
+</div>
+<p class="text-primary font-bold">920 pts</p>
+</div>
+<!-- Rank Row -->
+<div class="flex items-center bg-surface-navy p-4 rounded-xl border border-white/5">
+<span class="w-8 font-bold text-muted-sky text-sm">6</span>
+<div class="flex flex-1 items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Competitor profile picture rank 6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6AUkcxGY2SPaM2Tf1-8jUCPeD8wfADgJFOovgnjE531bmf1IfslQ4ASLmkY2JYAzSTeCX4uHmZIwSXXGmgNjqwHkCbKCgTN2u_wBDXFbkcbxjg6cICQifpxWwUM9Hej7MsnayWF2dB5B2IKMjolDzxWHywV5eRNSS-maCrP6q4HGAkqKgv0bwRSwajH88gHz0aadVmbs_jrYN3r5Kbqho2_y5HqcWWgEOMcmDVEMt6NdLichZsSDxyJ6OUzJUv9TkbY7SD-eBMq8"/>
+</div>
+<p class="text-white font-medium">Sofia K.</p>
+</div>
+<p class="text-primary font-bold">880 pts</p>
+</div>
+<!-- Rank Row -->
+<div class="flex items-center bg-surface-navy p-4 rounded-xl border border-white/5">
+<span class="w-8 font-bold text-muted-sky text-sm">7</span>
+<div class="flex flex-1 items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Competitor profile picture rank 7" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGrR8wMO4jm_AGMLKc4_b8-y1BCxWfC19IRNCm6KEbrRaLlTh2sRe72uqXS-JjgWo0_nNgdAr_zY6yWnUOeMCDAo5p-VoNnqI65FAnf-XA1yvY1XSY8k_gtycHSF7M64GZEih4SxmdMkivbIUUOzXQazMO5ybDDBq4lLMgIWGXhTjF9jovXfp4kupMpWL8VGtB4xeMxDySnul6mq_3BQ52b-UMb5ozOPlcddEqdD9jZFhx8XW1jW5UV0_saMmFly8C6PXVeP5OHuw"/>
+</div>
+<p class="text-white font-medium">Liam Smith</p>
+</div>
+<p class="text-primary font-bold">855 pts</p>
+</div>
+<!-- Placeholder for more ranks -->
+<div class="py-4 text-center">
+<div class="inline-block w-1.5 h-1.5 rounded-full bg-muted-sky/40 mx-0.5"></div>
+<div class="inline-block w-1.5 h-1.5 rounded-full bg-muted-sky/40 mx-0.5"></div>
+<div class="inline-block w-1.5 h-1.5 rounded-full bg-muted-sky/40 mx-0.5"></div>
+</div>
+</div>
+</main>
+<!-- Bottom Highlight Sticky Bar -->
+<div class="fixed bottom-[88px] left-0 right-0 px-4 z-10 pointer-events-none">
+<div class="bg-surface-navy/95 backdrop-blur-md border-2 border-primary p-4 rounded-xl shadow-2xl flex items-center justify-between pointer-events-auto">
+<div class="flex items-center gap-3">
+<span class="text-lg">🎯</span>
+<div>
+<p class="text-white font-bold text-sm">42ème - Koffi L.</p>
+<p class="text-muted-sky text-xs uppercase tracking-tighter">Votre Rang</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-primary font-black text-lg">340 pts</p>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-surface-navy border-t border-white/10 px-4 py-3 flex items-center justify-between z-20">
+<a class="flex flex-col items-center gap-1 flex-1 text-muted-sky" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Accueil</span>
+</a>
+<a class="flex flex-col items-center gap-1 flex-1 text-muted-sky" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-[10px] font-medium">Contacts</span>
+</a>
+<a class="flex flex-col items-center gap-1 flex-1 text-muted-sky" href="#">
+<span class="material-symbols-outlined text-3xl">add_circle</span>
+<span class="text-[10px] font-medium">Créer</span>
+</a>
+<a class="flex flex-col items-center gap-1 flex-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">emoji_events</span>
+<span class="text-[10px] font-bold">Classement</span>
+</a>
+<a class="flex flex-col items-center gap-1 flex-1 text-muted-sky" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-medium">Profil</span>
+</a>
+</nav>
+</body></html>

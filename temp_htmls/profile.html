@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vizo Profile - Account &amp; Earnings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00c298",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0A1628",
+                        "surface": "#112038",
+                        "accent-amber": "#FFB800",
+                        "accent-red": "#F96167",
+                        "muted-sky": "#7AA2C5"
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-4 flex items-center justify-between border-b border-white/5">
+<div class="w-10"></div>
+<h1 class="text-xl font-bold text-slate-900 dark:text-white">Mon Profil</h1>
+<div class="relative w-10 flex justify-end">
+<button class="p-2 rounded-full hover:bg-surface/50 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">notifications</span>
+<span class="absolute top-2 right-2 w-2.5 h-2.5 bg-accent-amber rounded-full border-2 border-background-dark"></span>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto px-4 py-6 space-y-6">
+<!-- User Info Card -->
+<section class="bg-surface rounded-xl p-8 flex flex-col items-center text-center shadow-lg border border-white/5 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+<div class="relative mb-4">
+<div class="w-28 h-28 rounded-full border-4 border-primary/20 p-1">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Photo de profil de l'utilisateur Koffi L." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgyZ_HYmUz2f1svNcvZ3dUGLYGtO_EUgd4r0iPcfs-oXklHAFBjC4r-PNgaoTiF7j1HF4biXqVWFRm1-_aXe0mznWIOuUViVKbQNyQMwH7ZEjKLqqlaaBdzAzeCX3sqX6GoJvJrwSwL4pZJm7YBZb_AR2ZIT3Si-bUBOCpw5zWRE4dn984bvJxGnpRQIUsOdS0NCqQSkMIZQyUGibVpYYRH93fmJt6xWSmTFIKb6rV6N3z-lrBSOxRjn0FuO_eoD1T5lX8MNz8WWA')">
+</div>
+</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-accent-amber px-3 py-1 rounded-full shadow-lg">
+<span class="text-[10px] font-bold text-background-dark uppercase tracking-wider">Ambassadeur</span>
+</div>
+</div>
+<div class="mt-4">
+<h2 class="text-2xl font-bold text-white">Koffi L.</h2>
+<p class="text-muted-sky font-medium mt-1">+229 97 00 00 00</p>
+</div>
+<div class="mt-4 bg-primary/10 border border-primary/20 px-4 py-1.5 rounded-full">
+<span class="text-primary text-sm font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 bg-primary rounded-full"></span>
+                    Abonnement Actif
+                </span>
+</div>
+</section>
+<!-- Wallet Card -->
+<section class="bg-surface rounded-xl p-6 shadow-lg border border-white/5">
+<div class="flex flex-col gap-1">
+<p class="text-muted-sky text-sm font-medium">Mes Commissions</p>
+<div class="flex items-end justify-between">
+<h3 class="text-3xl font-bold text-primary">14 000 FCFA</h3>
+<button class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-full font-bold text-sm transition-all transform active:scale-95 shadow-[0_4px_14px_0_rgba(0,194,152,0.39)]">
+                        Retirer l'argent
+                    </button>
+</div>
+</div>
+</section>
+<!-- Settings List -->
+<section class="space-y-3">
+<h4 class="text-muted-sky text-xs font-bold uppercase tracking-widest px-1">Paramètres du compte</h4>
+<div class="bg-surface rounded-xl overflow-hidden border border-white/5">
+<a class="flex items-center justify-between p-4 hover:bg-white/5 transition-colors border-b border-white/5 group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">card_membership</span>
+</div>
+<span class="font-medium">Gérer mon abonnement</span>
+</div>
+<span class="material-symbols-outlined text-muted-sky group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-white/5 transition-colors border-b border-white/5 group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">share</span>
+</div>
+<span class="font-medium">Mon code de parrainage</span>
+</div>
+<span class="material-symbols-outlined text-muted-sky group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-white/5 transition-colors border-b border-white/5 group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">monitoring</span>
+</div>
+<span class="font-medium">Historique des statistiques</span>
+</div>
+<span class="material-symbols-outlined text-muted-sky group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-white/5 transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">help</span>
+</div>
+<span class="font-medium">Aide &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-muted-sky group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Logout -->
+<div class="pt-4 pb-8 flex justify-center">
+<button class="flex items-center gap-2 text-accent-red font-bold hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">logout</span>
+                Se déconnecter
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="bg-surface border-t border-white/5 px-6 pt-3 pb-8 flex justify-between items-center">
+<a class="flex flex-col items-center gap-1 text-muted-sky" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Accueil</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-muted-sky" href="#">
+<span class="material-symbols-outlined">contacts</span>
+<span class="text-[10px] font-medium">Contacts</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-muted-sky" href="#">
+<div class="bg-primary/20 p-2 rounded-full -mt-8 border-4 border-background-dark">
+<div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-background-dark shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined !text-2xl font-bold">add</span>
+</div>
+</div>
+<span class="text-[10px] font-medium">Créer</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-muted-sky" href="#">
+<span class="material-symbols-outlined">trophy</span>
+<span class="text-[10px] font-medium">Classement</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined !fill-1">person</span>
+<span class="text-[10px] font-bold">Profil</span>
+</a>
+</nav>
+</body></html>
